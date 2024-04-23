@@ -37,7 +37,7 @@ Init Step ${1}/${STEP_CNT} [${2}] -- ${3}
 
 EOF
 }
-ADMIN_PASSWORD="admin"
+ADMIN_PASSWORD="PLOP!innovate3medicate1unipolar6landau_sirocco7gesture1mogul"
 # If Cypress run – overwrite the password for admin and export env variables
 if [ "$CYPRESS_CONFIG" == "true" ]; then
     ADMIN_PASSWORD="general"
@@ -54,9 +54,9 @@ echo_step "1" "Complete" "Applying DB migrations"
 echo_step "2" "Starting" "Setting up admin user ( admin / $ADMIN_PASSWORD )"
 superset fab create-admin \
               --username admin \
-              --firstname Superset \
-              --lastname Admin \
-              --email admin@superset.com \
+              --firstname Elkin \
+              --lastname Caicedo \
+              --email elkin.caicedo@uewhealth.com \
               --password $ADMIN_PASSWORD
 echo_step "2" "Complete" "Setting up admin user"
 # Create default roles and permissions
